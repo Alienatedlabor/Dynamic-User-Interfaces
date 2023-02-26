@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  background-color: #64748b;
+  color: whitesmoke;
+}
+button:hover {
+  background-color: #334155;
+}
+.header {
+  display: flex;
+  background-color: #64748b;
+  justify-content: flex-end;
+  color: white;
+  min-height: 2rem;
+  max-height: 3rem;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-right: 1rem;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.visible {
+  background-color: #64748b;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
