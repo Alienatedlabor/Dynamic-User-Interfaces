@@ -9,6 +9,7 @@ button {
   padding: 1rem 2rem;
   background-color: #64748b;
   color: whitesmoke;
+  max-height: 47px;
 }
 button:hover {
   background-color: #334155;
@@ -32,15 +33,29 @@ button:hover {
 .dropdown-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  position: relative;
+  align-items: center;
 }
 
 .visible {
   background-color: #64748b;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  position: absolute;
+  z-index: -1;
+}
+.hidden {
+  background-color: #64748b;
+  display: none;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  position: absolute;
+  z-index: -1;
 }
